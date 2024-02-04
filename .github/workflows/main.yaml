@@ -22,5 +22,5 @@ jobs:
       - name: Create CloudFront invalidation
         uses: josemando/aws-cloudfront-create-invalidation@v1
         with:
-          AWS_CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }}
+          distribution-id: AWS_CLOUDFRONT_DISTRIBUTION_ID
           paths: /*
